@@ -7,7 +7,7 @@ const App= () =>{
   const [step,setStep]=useState(1);
 
   const increase=() => setCount(count+step);
-  const decrease=() => setCount(count-step >0? count-step:0);
+  const decrease=() => setCount(count-step >= 0? count-step:0);
   const reset=()=>setCount(0);
 
   return (
